@@ -45,10 +45,10 @@ export class SearchBooksComponent implements OnInit {
     this.searching = true;
     if (queryText) {
       this.bookService.searchBooks(queryText)
-        .subscribe((response) => {
-          console.log(response);
+        .subscribe((booksList: Book[]) => {
+          console.log(booksList);
           this.searching = false;
-          this.books = response.items;
+          this.books = booksList;
         })
     }else {
       setTimeout(() => {

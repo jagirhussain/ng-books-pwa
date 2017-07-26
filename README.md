@@ -6,7 +6,8 @@
 
 # NgBooks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0-beta.0 for a talk at [Recurship](https://www.recurship.com)
+The project was created for a talk at [Recurship](https://www.recurship.com) using [Angular CLI](https://github.com/angular/angular-cli).
+Links to slides and demo can be found below.
 
 <p align="center"><img src="https://media.giphy.com/media/3oeHLCCNZGubJ6nE2s/giphy.gif"></p>
 
@@ -14,13 +15,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # LIVE DEMO
 See the app live and running [here](https://ahsanayaz.github.io/ng-books-pwa)
 
+# SLIDES
+The slides of the talk can be seen on the link below: 
+[https://slides.com/ahsanayaz/creating-pwas-using-angular/](https://slides.com/ahsanayaz/creating-pwas-using-angular/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## See PWA in action
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Run `sh run.sh` from your shell.
+This will do all the cool stuff and will create the PWA in the dist folder as well as will start the server on [localhost:8080](http://localhost:8080).
 
 ## Build
 
@@ -35,6 +41,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+## Contribute
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Feel free to contribute. Add pages & functionality. Make this PWA even cooler by doing lazy routing etc.
+Your PRs will surely be merged if they're cool and passing the builds :)
+

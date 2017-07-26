@@ -1,0 +1,31 @@
+{
+    "dynamic": {
+        "group": [
+        {
+            "name": "books api",
+            "urls": {
+                "https://www.googleapis.com/books/": {
+                    "match": "prefix"
+                },
+                "http://www.googleapis.com/books/": {
+                    "match": "prefix"
+                }
+            },
+            "cache": {
+            "optimizeFor": "performance",
+            "maxAgeMs": 3600000,
+            "maxEntries": 20,
+            "strategy": "lru"
+            }
+        }
+        ]
+    },
+    "external": {
+        "urls": [
+            {"url": "https://fonts.googleapis.com/icon?family=Material+Icons"}
+        ]
+    },
+    "push": {
+        "showNotifications": true
+    }
+}

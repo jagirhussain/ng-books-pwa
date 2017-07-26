@@ -4,9 +4,8 @@ import { SearchBooksComponent } from './pages/search-books/search-books.componen
 import { BookDetailPageComponent } from './pages/book-detail-page/book-detail-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'search', pathMatch: 'full' },
   {
-    path: 'search',
+    path: '',
     component: SearchBooksComponent
   },
   {

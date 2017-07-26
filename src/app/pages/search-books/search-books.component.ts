@@ -6,10 +6,10 @@ import { Book } from 'app/models/book.model';
 import { BookService } from '../../services/book.service';
 
 @Component({
-  moduleId: 'ng-books',
+  moduleId: module.id,
   selector: 'ngb-search-books',
-  templateUrl: './search-books.component.html',
-  styleUrls: ['./search-books.component.scss']
+  templateUrl: 'search-books.component.html',
+  styleUrls: ['search-books.component.scss']
 })
 export class SearchBooksComponent implements OnInit {
   searchText = 'science';

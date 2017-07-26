@@ -4,10 +4,10 @@ import { BookService } from '../../services/book.service';
 import { Book } from 'app/models/book.model';
 
 @Component({
-  moduleId: 'ng-books',
+  moduleId: module.id,
   selector: 'ngb-book-detail-page',
-  templateUrl: './book-detail-page.component.html',
-  styleUrls: ['./book-detail-page.component.scss']
+  templateUrl: 'book-detail-page.component.html',
+  styleUrls: ['book-detail-page.component.scss']
 })
 export class BookDetailPageComponent implements OnInit {
   book: Book;

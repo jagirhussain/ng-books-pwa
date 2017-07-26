@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SearchBooksComponent } from 'app/pages/search-books/search-books.component';
-import { BookDetailPageComponent } from 'app/pages/book-detail-page/book-detail-page.component';
+import { SearchBooksComponent } from './pages/search-books/search-books.component';
+import { BookDetailPageComponent } from './pages/book-detail-page/book-detail-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'search', pathMatch: 'full' },

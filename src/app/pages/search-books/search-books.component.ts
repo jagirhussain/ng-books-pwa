@@ -3,9 +3,10 @@ import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { Book } from 'app/models/book.model';
-import { BookService } from 'app/services/book.service';
+import { BookService } from '../../services/book.service';
 
 @Component({
+  moduleId: 'ng-books',
   selector: 'ngb-search-books',
   templateUrl: './search-books.component.html',
   styleUrls: ['./search-books.component.scss']

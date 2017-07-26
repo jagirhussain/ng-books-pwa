@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgServiceWorker, ServiceWorkerModule } from '@angular/service-worker';
+
 import { AppRoutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustMaterialModule } from './shared/cust-material/cust-material.module';
@@ -30,12 +32,12 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
   ],
   imports: [
     BrowserAnimationsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'ng-books'}),
     RouterModule,
+    ServiceWorkerModule,
     AppRoutes,
     FormsModule,
     HttpModule,
-    // BooksModule,
     CustMaterialModule
   ],
   providers: [{
@@ -46,4 +48,16 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private sw: NgServiceWorker) {
+    sw.registerForPush({
+      applicationServerKey: 'BGSn9VlhizlenDmZbU53-cxBm67ZiR6-PN2Yf9r8rsslpt8nhsAUqxPSiKsuQ4gDmXDsiaxANFJD5wS6qnDFkD0'  // your push server key
+    }).subscribe(sub => {
+      console.log(sub.toJSON());
+    })
+
+    sw.push.subscribe(notif => {
+      console.log(notif);
+    })
+  }
+}

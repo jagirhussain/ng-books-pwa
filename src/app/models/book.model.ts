@@ -1,11 +1,11 @@
 export interface Book {
   id: string;
-  volumeInfo: {
+  volumeInfo?: {
     title: string;
     subtitle: string;
     authors: string[];
     publisher: string;
-    publishDate: string;
+    publishedDate: string;
     description: string;
     averageRating: number;
     ratingsCount: number;

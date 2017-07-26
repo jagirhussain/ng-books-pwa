@@ -1,4 +1,5 @@
 import { AppPage } from './app.po';
+import { browser } from 'protractor';
 
 describe('ng-books App', () => {
   let page: AppPage;
@@ -9,6 +10,6 @@ describe('ng-books App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ngb!!');
+    expect(browser.getTitle()).toEqual('NgBooks');
   });
 });

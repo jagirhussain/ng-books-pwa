@@ -1,6 +1,18 @@
+[![CI Status](http://img.shields.io/travis/AhsanAyaz/ng-books-pwa.svg?style=flat)](https://travis-ci.org/AhsanAyaz/ng-books-pwa)
+[![Dependency Status](https://david-dm.org/AhsanAyaz/ng-books-pwa/status.svg)](https://david-dm.org/AhsanAyaz/ng-books-pwa#info=dependencies) 
+[![Devdependency Status](https://david-dm.org/AhsanAyaz/ng-books-pwa/dev-status.svg)](https://david-dm.org/AhsanAyaz/ng-books-pwa#info=devDependencies) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b5fc728b889a447da22b07bfdabef724)](https://www.codacy.com/app/AhsanAyaz/ng-books-pwa?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AhsanAyaz/ng-books-pwa&amp;utm_campaign=Badge_Grade)
+
+
 # NgBooks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0-beta.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0-beta.0 for a talk at [Recurship](https://www.recurship.com)
+
+<p align="center"><img src="https://media.giphy.com/media/3oeHLCCNZGubJ6nE2s/giphy.gif"></p>
+
+
+# LIVE DEMO
+See the app live and running [here](https://ahsanayaz.github.io/ng-books-pwa)
 
 ## Development server
 

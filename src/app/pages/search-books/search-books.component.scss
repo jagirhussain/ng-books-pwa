@@ -1,0 +1,41 @@
+.books-list{
+    max-width: 960px;
+    margin: 0 auto;
+    .book-item{
+        .book-card{
+            overflow: auto;
+            max-height: 100%;
+            .book-img{
+                object-fit: contain;
+            }
+        }
+        &:hover{
+            .mat-figure{
+                box-shadow: 0 16px 16px 0 rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+md-card-title,
+md-card-content {
+    display: flex;
+    justify-content: center;
+}
+input {
+    width: 300px;
+}
+md-card-spinner {
+    padding-left: 60px; // Make room for the spinner
+}
+md-spinner {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0.0;
+}
+md-spinner.show {
+    opacity: 1.0;
+}

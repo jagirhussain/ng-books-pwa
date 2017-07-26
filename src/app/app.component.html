@@ -1,0 +1,14 @@
+<md-toolbar color="primary">Ng Books
+  <button md-icon-button (click)="sidenav.toggle()" class="menu-toggle"><i class="material-icons">menu</i></button>
+</md-toolbar>
+<md-sidenav-container class="ngb-sidebar">
+  <md-sidenav #sidenav class="ngb-sidenav">
+    <md-list>
+      <md-list-item [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">Search Books</md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div class="ngb-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

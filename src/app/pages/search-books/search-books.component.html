@@ -1,0 +1,32 @@
+<md-card>
+  <md-card-title>Search Books</md-card-title>
+  <md-card-content>
+    <md-input-container>
+      <input mdInput (ngModelChange)="onSearchTextChange(searchText)" [(ngModel)]="searchText" placeholder="Search books" [value]="searchText">
+    </md-input-container>
+    <md-spinner [class.show]="searching"></md-spinner>
+  </md-card-content>
+</md-card>
+
+<ngb-books-list [books]="books"></ngb-books-list>
+
+
+<!-- <md-grid-list class="books-list" cols="3" rowHeight="1:2" gutterSize="10">
+  <md-grid-tile class="book-item" *ngFor="let book of books;">
+    <md-card class="book-card">
+      <md-card-title>{{book.volumeInfo.title}}</md-card-title>
+      <md-card-subtitle>{{book.volumeInfo.subtitle}}</md-card-subtitle>
+      <md-card-header>
+        <img class="book-img" md-card-image [src]="book.volumeInfo.imageLinks.thumbnail">
+      </md-card-header>
+      <md-card-content>
+        <p>
+        </p>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button>LIKE</button>
+        <button md-button>SHARE</button>
+      </md-card-actions>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list> -->

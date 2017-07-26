@@ -1,0 +1,15 @@
+<a [routerLink]="['/book', id]">
+  <md-card>
+    <md-card-title-group>
+      <img md-card-sm-image *ngIf="thumbnail" [src]="thumbnail"/>
+      <md-card-title>{{ title | ellipsis:35 }}</md-card-title>
+      <md-card-subtitle *ngIf="subtitle">{{ subtitle | ellipsis:40 }}</md-card-subtitle>
+    </md-card-title-group>
+    <md-card-content>
+      <p *ngIf="description">{{ description | ellipsis }}</p>
+    </md-card-content>
+    <md-card-footer>
+      <!-- <bc-book-authors [book]="book"></bc-book-authors> -->
+    </md-card-footer>
+  </md-card>
+</a>

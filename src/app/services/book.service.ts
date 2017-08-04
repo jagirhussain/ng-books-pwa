@@ -12,7 +12,9 @@ export class BookService {
   private replaceHttpsInProps(book: Book): Book {
     const propsToModify = ['thumbnail', 'smallThumbnail'];
     propsToModify.forEach((prop) => {
-      book.volumeInfo.imageLinks[prop] = book.volumeInfo.imageLinks[prop].replace('http://', 'https://');
+      if (book.volumeInfo && book.volumeInfo.imageLinks) {
+        book.volumeInfo.imageLinks[prop] = book.volumeInfo.imageLinks[prop].replace('http://', 'https://');
+      }
     })
     return book;
   }

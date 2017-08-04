@@ -32,7 +32,7 @@ export class BookPreviewComponent implements OnInit {
   }
 
   get thumbnail(): string | boolean {
-    if (this.book.volumeInfo.imageLinks) {
+    if (this.book.volumeInfo && this.book.volumeInfo.imageLinks) {
       return this.book.volumeInfo.imageLinks.smallThumbnail;
     }
 

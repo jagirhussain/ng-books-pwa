@@ -1,0 +1,59 @@
+{
+  "dynamic": {
+    "group": [
+      {
+        "name": "books api",
+        "urls": {
+          "https://www.googleapis.com/books/": {
+            "match": "prefix"
+          },
+          "http://www.googleapis.com/books/": {
+            "match": "prefix"
+          }
+        },
+        "cache": {
+          "optimizeFor": "performance",
+          "maxAgeMs": 3600000,
+          "maxEntries": 20,
+          "strategy": "lru"
+        }
+      }
+    ]
+  },
+  "external": {
+    "urls": [
+      {
+        "url": "https://fonts.googleapis.com/icon?family=Material+Icons"
+      }
+    ]
+  },
+  "push": {
+    "showNotifications": true
+  },
+  "routing": {
+    "index": "https://ahsanayaz.github.io/ng-books-pwa/index.html",
+    "routes": {
+      "https://ahsanayaz.github.io/ng-books-pwa": {
+        "match": "exact"
+      },
+      "^https://ahsanayaz.github.io/ng-books-pwa/book/[^/]+$": {
+        "match": "regex"
+      }
+    }
+  },
+  "static": {
+    "urls": {
+      "https://ahsanayaz.github.io/ng-books-pwa/3rdpartylicenses.txt": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "https://ahsanayaz.github.io/ng-books-pwa/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+      "https://ahsanayaz.github.io/ng-books-pwa/index.html": "7ffdf190b348d5b15ec949e6e15614fe191a4369",
+      "https://ahsanayaz.github.io/ng-books-pwa/inline.47d7be8b07249ee300fd.bundle.js": "41466f617ec5187f1f06bf8a1714408209593cee",
+      "https://ahsanayaz.github.io/ng-books-pwa/main.e3da48a7e163ed13cffe.bundle.js": "56b6b9a9b4422b11504bb4a4417bee2c70f1173a",
+      "https://ahsanayaz.github.io/ng-books-pwa/ngsw-manifest.json": "aae623518ad4ac8b18d6f37610aa86ea01f71575",
+      "https://ahsanayaz.github.io/ng-books-pwa/polyfills.574056ad92b56d22f7bb.bundle.js": "7c10ca088d639aac9bab14723e759e22533bf718",
+      "https://ahsanayaz.github.io/ng-books-pwa/styles.abfd3a51b147501a0813.bundle.css": "729a48e901590214084c2670870f0527e00dbdc3",
+      "https://ahsanayaz.github.io/ng-books-pwa/sw-register.c3a9f56ebf829a0880d3.bundle.js": "6c5694fa18f55de662ff331e4d69d4521033fd80",
+      "https://ahsanayaz.github.io/ng-books-pwa/vendor.44a6f84e9450091d2808.bundle.js": "4d6f06545c9cf9297dfece1c17c0aeb86d28d28b",
+      "https://ahsanayaz.github.io/ng-books-pwa/worker-basic.min.js": "2f12848c352bd6baf25f0f1d995351696ef518ff"
+    }
+  }
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>NgBooks</title><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><base href="https://ahsanayaz.github.io/ng-books-pwa/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.abfd3a51b147501a0813.bundle.css" rel="stylesheet"><style ng-transition="ng-books">.ngb-sidebar[_ngcontent-c0] {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    .ngb-sidenav {
+        // padding: 20px;
+        md-list{
+            md-list-item{
+                padding: 5px 30px;
+                &.active, &:hover{
+                    cursor: pointer;
+                    color: #fff;
+                    background: #333;
+                }
+            }
+        }
+    }
+}
+
+.menu-toggle[_ngcontent-c0]{
+    margin-left: 10px;
+}</style><style ng-transition="ng-books">.mat-toolbar{display:flex;box-sizing:border-box;width:100%;padding:0 16px;flex-direction:column}.mat-toolbar .mat-toolbar-row{display:flex;box-sizing:border-box;width:100%;flex-direction:row;align-items:center;white-space:nowrap}.mat-toolbar{min-height:64px}.mat-toolbar-row{height:64px}@media (max-width:600px){.mat-toolbar{min-height:56px}.mat-toolbar-row{height:56px}}</style><style ng-transition="ng-books">.mat-button,.mat-fab,.mat-icon-button,.mat-mini-fab,.mat-raised-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:0;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:88px;line-height:36px;padding:0 16px;border-radius:2px}[disabled].mat-button,[disabled].mat-fab,[disabled].mat-icon-button,[disabled].mat-mini-fab,[disabled].mat-raised-button{cursor:default}.cdk-keyboard-focused.mat-button .mat-button-focus-overlay,.cdk-keyboard-focused.mat-fab .mat-button-focus-overlay,.cdk-keyboard-focused.mat-icon-button .mat-button-focus-overlay,.cdk-keyboard-focused.mat-mini-fab .mat-button-focus-overlay,.cdk-keyboard-focused.mat-raised-button .mat-button-focus-overlay{opacity:1}.mat-button::-moz-focus-inner,.mat-fab::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-mini-fab::-moz-focus-inner,.mat-raised-button::-moz-focus-inner{border:0}.mat-fab,.mat-mini-fab,.mat-raised-button{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);transform:translate3d(0,0,0);transition:background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1)}.mat-fab:not([disabled]):active,.mat-mini-fab:not([disabled]):active,.mat-raised-button:not([disabled]):active{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}[disabled].mat-fab,[disabled].mat-mini-fab,[disabled].mat-raised-button{box-shadow:none}.mat-button .mat-button-focus-overlay,.mat-icon-button .mat-button-focus-overlay{transition:none;opacity:0}.mat-button:hover .mat-button-focus-overlay{opacity:1}.mat-fab{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);min-width:0;border-radius:50%;width:56px;height:56px;padding:0;flex-shrink:0}.mat-fab:not([disabled]):active{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.mat-fab .mat-icon,.mat-fab i{padding:16px 0;line-height:24px}.mat-mini-fab{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);min-width:0;border-radius:50%;width:40px;height:40px;padding:0;flex-shrink:0}.mat-mini-fab:not([disabled]):active{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.mat-mini-fab .mat-icon,.mat-mini-fab i{padding:8px 0;line-height:24px}.mat-icon-button{padding:0;min-width:0;width:40px;height:40px;flex-shrink:0;line-height:40px;border-radius:50%}.mat-icon-button .mat-icon,.mat-icon-button i{line-height:24px}.mat-button,.mat-icon-button,.mat-raised-button{color:currentColor}.mat-button .mat-button-wrapper>*,.mat-icon-button .mat-button-wrapper>*,.mat-raised-button .mat-button-wrapper>*{vertical-align:middle}.mat-button-focus-overlay,.mat-button-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-button-focus-overlay{background-color:rgba(0,0,0,.12);border-radius:inherit;opacity:0;transition:opacity .2s cubic-bezier(.35,0,.25,1),background-color .2s cubic-bezier(.35,0,.25,1)}@media screen and (-ms-high-contrast:active){.mat-button-focus-overlay{background-color:rgba(255,255,255,.5)}}.mat-button-ripple-round{border-radius:50%;z-index:1}@media screen and (-ms-high-contrast:active){.mat-button,.mat-fab,.mat-icon-button,.mat-mini-fab,.mat-raised-button{outline:solid 1px}}</style><style ng-transition="ng-books">.mat-sidenav-container{position:relative;transform:translate3d(0,0,0);box-sizing:border-box;-webkit-overflow-scrolling:touch;display:block;overflow:hidden}.mat-sidenav-container[fullscreen]{position:absolute;top:0;left:0;right:0;bottom:0}.mat-sidenav-container[fullscreen].mat-sidenav-opened{overflow:hidden}.mat-sidenav-backdrop{position:absolute;top:0;left:0;right:0;bottom:0;display:block;z-index:2;visibility:hidden}.mat-sidenav-backdrop.mat-sidenav-shown{visibility:visible}@media screen and (-ms-high-contrast:active){.mat-sidenav-backdrop{opacity:.5}}.mat-sidenav-content{position:relative;transform:translate3d(0,0,0);display:block;height:100%;overflow:auto}.mat-sidenav{position:relative;transform:translate3d(0,0,0);display:block;position:absolute;top:0;bottom:0;z-index:3;min-width:5vw;outline:0;box-sizing:border-box;height:100%;overflow-y:auto;transform:translate3d(-100%,0,0)}.mat-sidenav.mat-sidenav-closed{visibility:hidden}.mat-sidenav.mat-sidenav-opened,.mat-sidenav.mat-sidenav-opening{transform:translate3d(0,0,0)}.mat-sidenav.mat-sidenav-side{z-index:1}.mat-sidenav.mat-sidenav-end{right:0;transform:translate3d(100%,0,0)}.mat-sidenav.mat-sidenav-end.mat-sidenav-closed{visibility:hidden}.mat-sidenav.mat-sidenav-end.mat-sidenav-opened,.mat-sidenav.mat-sidenav-end.mat-sidenav-opening{transform:translate3d(0,0,0)}[dir=rtl] .mat-sidenav{transform:translate3d(100%,0,0)}[dir=rtl] .mat-sidenav.mat-sidenav-closed{visibility:hidden}[dir=rtl] .mat-sidenav.mat-sidenav-opened,[dir=rtl] .mat-sidenav.mat-sidenav-opening{transform:translate3d(0,0,0)}[dir=rtl] .mat-sidenav.mat-sidenav-end{left:0;right:auto;transform:translate3d(-100%,0,0)}[dir=rtl] .mat-sidenav.mat-sidenav-end.mat-sidenav-closed{visibility:hidden}[dir=rtl] .mat-sidenav.mat-sidenav-end.mat-sidenav-opened,[dir=rtl] .mat-sidenav.mat-sidenav-end.mat-sidenav-opening{transform:translate3d(0,0,0)}.mat-sidenav.mat-sidenav-opened:not(.mat-sidenav-side),.mat-sidenav.mat-sidenav-opening:not(.mat-sidenav-side){box-shadow:0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12)} .mat-sidenav-transition .mat-sidenav{transition:transform .4s cubic-bezier(.25,.8,.25,1)}.mat-sidenav-transition .mat-sidenav-content{transition-duration:.4s;transition-timing-function:cubic-bezier(.25,.8,.25,1);transition-property:transform,margin-left,margin-right}.mat-sidenav-transition .mat-sidenav-backdrop.mat-sidenav-shown{transition:background-color .4s cubic-bezier(.25,.8,.25,1)}</style><style ng-transition="ng-books">.mat-subheader{display:block;box-sizing:border-box;padding:16px;margin:0}.mat-list,.mat-nav-list{padding-top:8px;display:block}.mat-list .mat-subheader,.mat-nav-list .mat-subheader{height:48px}.mat-list .mat-subheader:first-child,.mat-nav-list .mat-subheader:first-child{margin-top:-8px}.mat-list .mat-list-item,.mat-nav-list .mat-list-item{display:block}.mat-list .mat-list-item .mat-list-item-content,.mat-nav-list .mat-list-item .mat-list-item-content{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;height:48px;padding:0 16px;position:relative}.mat-list .mat-list-item .mat-list-item-ripple,.mat-nav-list .mat-list-item .mat-list-item-ripple{position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none}.mat-list .mat-list-item.mat-list-item-avatar .mat-list-item-content,.mat-nav-list .mat-list-item.mat-list-item-avatar .mat-list-item-content{height:56px}.mat-list .mat-list-item.mat-2-line .mat-list-item-content,.mat-nav-list .mat-list-item.mat-2-line .mat-list-item-content{height:72px}.mat-list .mat-list-item.mat-3-line .mat-list-item-content,.mat-nav-list .mat-list-item.mat-3-line .mat-list-item-content{height:88px}.mat-list .mat-list-item.mat-multi-line .mat-list-item-content,.mat-nav-list .mat-list-item.mat-multi-line .mat-list-item-content{height:100%;padding:8px 16px}.mat-list .mat-list-item .mat-list-text,.mat-nav-list .mat-list-item .mat-list-text{display:flex;flex-direction:column;width:100%;box-sizing:border-box;overflow:hidden;padding:0 16px}.mat-list .mat-list-item .mat-list-text>*,.mat-nav-list .mat-list-item .mat-list-text>*{margin:0;padding:0;font-weight:400;font-size:inherit}.mat-list .mat-list-item .mat-list-text:empty,.mat-nav-list .mat-list-item .mat-list-text:empty{display:none}.mat-list .mat-list-item .mat-list-text:nth-child(2),.mat-nav-list .mat-list-item .mat-list-text:nth-child(2){padding:0}.mat-list .mat-list-item .mat-list-avatar,.mat-nav-list .mat-list-item .mat-list-avatar{flex-shrink:0;width:40px;height:40px;border-radius:50%}.mat-list .mat-list-item .mat-list-icon,.mat-nav-list .mat-list-item .mat-list-icon{width:24px;height:24px;font-size:24px;box-sizing:content-box;border-radius:50%;padding:4px}.mat-list[dense],.mat-nav-list[dense]{padding-top:4px;display:block}.mat-list[dense] .mat-subheader,.mat-nav-list[dense] .mat-subheader{height:40px}.mat-list[dense] .mat-subheader:first-child,.mat-nav-list[dense] .mat-subheader:first-child{margin-top:-4px}.mat-list[dense] .mat-list-item,.mat-nav-list[dense] .mat-list-item{display:block}.mat-list[dense] .mat-list-item .mat-list-item-content,.mat-nav-list[dense] .mat-list-item .mat-list-item-content{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;height:40px;padding:0 16px;position:relative}.mat-list[dense] .mat-list-item .mat-list-item-ripple,.mat-nav-list[dense] .mat-list-item .mat-list-item-ripple{position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none}.mat-list[dense] .mat-list-item.mat-list-item-avatar .mat-list-item-content,.mat-nav-list[dense] .mat-list-item.mat-list-item-avatar .mat-list-item-content{height:48px}.mat-list[dense] .mat-list-item.mat-2-line .mat-list-item-content,.mat-nav-list[dense] .mat-list-item.mat-2-line .mat-list-item-content{height:60px}.mat-list[dense] .mat-list-item.mat-3-line .mat-list-item-content,.mat-nav-list[dense] .mat-list-item.mat-3-line .mat-list-item-content{height:76px}.mat-list[dense] .mat-list-item.mat-multi-line .mat-list-item-content,.mat-nav-list[dense] .mat-list-item.mat-multi-line .mat-list-item-content{height:100%;padding:8px 16px}.mat-list[dense] .mat-list-item .mat-list-text,.mat-nav-list[dense] .mat-list-item .mat-list-text{display:flex;flex-direction:column;width:100%;box-sizing:border-box;overflow:hidden;padding:0 16px}.mat-list[dense] .mat-list-item .mat-list-text>*,.mat-nav-list[dense] .mat-list-item .mat-list-text>*{margin:0;padding:0;font-weight:400;font-size:inherit}.mat-list[dense] .mat-list-item .mat-list-text:empty,.mat-nav-list[dense] .mat-list-item .mat-list-text:empty{display:none}.mat-list[dense] .mat-list-item .mat-list-text:nth-child(2),.mat-nav-list[dense] .mat-list-item .mat-list-text:nth-child(2){padding:0}.mat-list[dense] .mat-list-item .mat-list-avatar,.mat-nav-list[dense] .mat-list-item .mat-list-avatar{flex-shrink:0;width:40px;height:40px;border-radius:50%}.mat-list[dense] .mat-list-item .mat-list-icon,.mat-nav-list[dense] .mat-list-item .mat-list-icon{width:20px;height:20px;font-size:20px;box-sizing:content-box;border-radius:50%;padding:4px}.mat-divider{display:block;border-top-style:solid;border-top-width:1px;margin:0}.mat-nav-list a{text-decoration:none;color:inherit}.mat-nav-list .mat-list-item-content{cursor:pointer}.mat-nav-list .mat-list-item-content.mat-list-item-focus,.mat-nav-list .mat-list-item-content:hover{outline:0}</style><style ng-transition="ng-books">.books-list[_ngcontent-c5]{
+    max-width: 960px;
+    margin: 0 auto;
+    .book-item{
+        .book-card{
+            overflow: auto;
+            max-height: 100%;
+            .book-img{
+                object-fit: contain;
+            }
+        }
+        &:hover{
+            .mat-figure{
+                box-shadow: 0 16px 16px 0 rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+md-card-title[_ngcontent-c5], md-card-content[_ngcontent-c5] {
+    display: flex;
+    justify-content: center;
+}
+input[_ngcontent-c5] {
+    width: 300px;
+}
+md-card-spinner[_ngcontent-c5] {
+    padding-left: 60px; // Make room for the spinner
+}
+md-spinner[_ngcontent-c5] {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0.0;
+}
+md-spinner.show[_ngcontent-c5] {
+    opacity: 1.0;
+}</style><style ng-transition="ng-books">.mat-card{transition:box-shadow 280ms cubic-bezier(.4,0,.2,1);display:block;position:relative;padding:24px;border-radius:2px}.mat-card:not([class*=mat-elevation-z]){box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}@media screen and (-ms-high-contrast:active){.mat-card{outline:solid 1px}}.mat-card-flat{box-shadow:none}.mat-card-actions,.mat-card-content,.mat-card-subtitle,.mat-card-title{display:block;margin-bottom:16px}.mat-card-actions{margin-left:-16px;margin-right:-16px;padding:8px 0}.mat-card-actions[align=end]{display:flex;justify-content:flex-end}.mat-card-image{width:calc(100% + 48px);margin:0 -24px 16px -24px}.mat-card-xl-image{width:240px;height:240px;margin:-8px}.mat-card-footer{position:absolute;width:100%;min-height:5px;bottom:0;left:0}.mat-card-actions .mat-button,.mat-card-actions .mat-raised-button{margin:0 4px}.mat-card-header{display:flex;flex-direction:row}.mat-card-header-text{margin:0 8px}.mat-card-avatar{height:40px;width:40px;border-radius:50%;flex-shrink:0}.mat-card-lg-image,.mat-card-md-image,.mat-card-sm-image{margin:-8px 0}.mat-card-title-group{display:flex;justify-content:space-between;margin:0 -8px}.mat-card-sm-image{width:80px;height:80px}.mat-card-md-image{width:112px;height:112px}.mat-card-lg-image{width:152px;height:152px}@media (max-width:600px){.mat-card{padding:24px 16px}.mat-card-actions{margin-left:-8px;margin-right:-8px}.mat-card-image{width:calc(100% + 32px);margin:16px -16px}.mat-card-title-group{margin:0}.mat-card-xl-image{margin-left:0;margin-right:0}.mat-card-header{margin:-8px 0 0 0}}.mat-card-content>:first-child,.mat-card>:first-child{margin-top:0}.mat-card-content>:last-child,.mat-card>:last-child{margin-bottom:0}.mat-card-image:first-child{margin-top:-24px}.mat-card>.mat-card-actions:last-child{margin-bottom:-16px;padding-bottom:0}.mat-card-actions .mat-button:first-child,.mat-card-actions .mat-raised-button:first-child{margin-left:0;margin-right:0}.mat-card-subtitle:not(:first-child),.mat-card-title:not(:first-child){margin-top:-4px}.mat-card-header .mat-card-subtitle:not(:first-child){margin-top:-8px}.mat-card>.mat-card-xl-image:first-child{margin-top:-8px}.mat-card>.mat-card-xl-image:last-child{margin-bottom:-8px}</style><style ng-transition="ng-books">.mat-input-container{display:inline-block;position:relative;text-align:left}[dir=rtl] .mat-input-container{text-align:right}.mat-input-wrapper{position:relative}.mat-input-flex{display:inline-flex;align-items:baseline;width:100%}.mat-input-prefix,.mat-input-suffix{white-space:nowrap;flex:none}.mat-input-prefix .mat-datepicker-toggle,.mat-input-prefix .mat-icon,.mat-input-suffix .mat-datepicker-toggle,.mat-input-suffix .mat-icon{width:1em;height:1em;vertical-align:text-bottom}.mat-input-prefix .mat-icon-button,.mat-input-suffix .mat-icon-button{font:inherit;vertical-align:baseline}.mat-input-prefix .mat-icon-button .mat-icon,.mat-input-suffix .mat-icon-button .mat-icon{font-size:inherit;width:1em;height:1em;vertical-align:baseline}.mat-input-infix{display:block;position:relative;flex:auto}.mat-input-element{font:inherit;background:0 0;color:currentColor;border:none;outline:0;padding:0;width:100%;vertical-align:bottom}.mat-input-element:-moz-ui-invalid{box-shadow:none}.mat-input-element:-webkit-autofill+.mat-input-placeholder-wrapper .mat-input-placeholder{display:none}.mat-input-element:-webkit-autofill+.mat-input-placeholder-wrapper .mat-float{display:block;transition:none}.mat-input-element::placeholder{color:transparent!important}.mat-input-element::-moz-placeholder{color:transparent!important}.mat-input-element::-webkit-input-placeholder{color:transparent!important}.mat-input-element:-ms-input-placeholder{color:transparent!important}.mat-input-placeholder-wrapper{position:absolute;left:0;box-sizing:content-box;width:100%;height:100%;overflow:hidden;pointer-events:none}textarea.mat-input-element{overflow:auto}.mat-input-placeholder{position:absolute;left:0;font:inherit;pointer-events:none;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transform:perspective(100px);-ms-transform:none;transform-origin:0 0;transition:transform .4s cubic-bezier(.25,.8,.25,1),color .4s cubic-bezier(.25,.8,.25,1),width .4s cubic-bezier(.25,.8,.25,1);display:none}.mat-focused .mat-input-placeholder.mat-float,.mat-input-placeholder.mat-empty,.mat-input-placeholder.mat-float:not(.mat-empty){display:block}[dir=rtl] .mat-input-placeholder{transform-origin:100% 0;left:auto;right:0}.mat-input-placeholder:not(.mat-empty){transition:none}.mat-input-underline{position:absolute;height:1px;width:100%}.mat-input-underline.mat-disabled{background-image:linear-gradient(to right,rgba(0,0,0,.26) 0,rgba(0,0,0,.26) 33%,transparent 0);background-size:4px 1px;background-repeat:repeat-x;background-position:0;background-color:transparent}.mat-input-underline .mat-input-ripple{position:absolute;height:2px;top:0;left:0;width:100%;transform-origin:50%;transform:scaleX(.5);visibility:hidden;transition:background-color .3s cubic-bezier(.55,0,.55,.2)}.mat-focused .mat-input-underline .mat-input-ripple,.mat-input-invalid .mat-input-underline .mat-input-ripple{visibility:visible;transform:scaleX(1);transition:transform 150ms linear,background-color .3s cubic-bezier(.55,0,.55,.2)}.mat-input-subscript-wrapper{position:absolute;width:100%;overflow:hidden}.mat-input-placeholder-wrapper .mat-datepicker-toggle,.mat-input-placeholder-wrapper .mat-icon,.mat-input-subscript-wrapper .mat-datepicker-toggle,.mat-input-subscript-wrapper .mat-icon{width:1em;height:1em;font-size:inherit;vertical-align:baseline}.mat-input-hint-wrapper{display:flex}.mat-input-hint-spacer{flex:1 0 1em}.mat-input-error{display:block}</style><style ng-transition="ng-books">[_nghost-c8]{display:block;height:100px;width:100px;overflow:hidden}[_nghost-c8]   svg[_ngcontent-c8]{height:100%;width:100%;transform-origin:center}[_nghost-c8]   path[_ngcontent-c8]{fill:transparent;transition:stroke .3s cubic-bezier(.35,0,.25,1)}[mode=indeterminate][_nghost-c8]   svg[_ngcontent-c8]{animation-duration:5.25s,2.887s;animation-name:mat-progress-spinner-sporadic-rotate,mat-progress-spinner-linear-rotate;animation-timing-function:cubic-bezier(.35,0,.25,1),linear;animation-iteration-count:infinite;transition:none}@keyframes mat-progress-spinner-linear-rotate{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes mat-progress-spinner-sporadic-rotate{12.5%{transform:rotate(135deg)}25%{transform:rotate(270deg)}37.5%{transform:rotate(405deg)}50%{transform:rotate(540deg)}62.5%{transform:rotate(675deg)}75%{transform:rotate(810deg)}87.5%{transform:rotate(945deg)}100%{transform:rotate(1080deg)}}</style><style ng-transition="ng-books">[_nghost-c9] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+}</style><style ng-transition="ng-books">md-card[_ngcontent-c10] {
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+}
+@media only screen and (max-width: 768px) {
+    md-card[_ngcontent-c10] {
+        margin: 15px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    md-card[_ngcontent-c10] {
+        width: 300px;
+    }
+}
+md-card[_ngcontent-c10]:hover {
+    box-shadow: 3px 3px 16px -2px rgba(0, 0, 0, .5);
+}
+md-card-title[_ngcontent-c10] {
+    margin-right: 10px;
+}
+md-card-title-group[_ngcontent-c10] {
+    margin: 0;
+}
+a[_ngcontent-c10] {
+    color: inherit;
+    text-decoration: none;
+}
+img[_ngcontent-c10] {
+    width: 60px;
+    min-width: 60px;
+    margin-left: 5px;
+}
+md-card-content[_ngcontent-c10] {
+    margin-top: 15px;
+    margin: 15px 0 0;
+}
+span[_ngcontent-c10] {
+    display: inline-block;
+    font-size: 13px;
+}
+md-card-footer[_ngcontent-c10] {
+    padding: 0 25px 25px;
+}</style></head><body><ngb-root _nghost-c0="" ng-version="4.3.1"><md-toolbar _ngcontent-c0="" class="mat-toolbar mat-primary" color="primary" role="toolbar"><div class="mat-toolbar-layout"><md-toolbar-row class="mat-toolbar-row">Ng Books
+  <button _ngcontent-c0="" class="menu-toggle mat-icon-button" md-icon-button=""><span class="mat-button-wrapper"><i _ngcontent-c0="" class="material-icons">menu</i></span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></button>
+</md-toolbar-row></div></md-toolbar>
+<md-sidenav-container _ngcontent-c0="" class="ngb-sidebar mat-sidenav-container mat-sidenav-transition"><div class="mat-sidenav-backdrop"></div><md-sidenav _ngcontent-c0="" class="ngb-sidenav mat-sidenav mat-sidenav-closed mat-sidenav-over" tabIndex="-1">
+    <md-list _ngcontent-c0="" class="mat-list" role="list">
+      <md-list-item _ngcontent-c0="" class="mat-list-item active" role="listitem" routerLinkActive="active" tabindex="0"><div class="mat-list-item-content"><div class="mat-list-item-ripple mat-ripple" md-ripple=""></div><div class="mat-list-text"></div>Search Books</div></md-list-item>
+    </md-list>
+  </md-sidenav><div cdk-scrollable="" class="mat-sidenav-content" style="marginLeft:0px;marginRight:0px;transform:translate3d(0px, 0, 0);">
+  
+  <div _ngcontent-c0="" class="ngb-sidenav-content">
+    <router-outlet _ngcontent-c0=""></router-outlet><ngb-search-books _nghost-c5=""><md-card _ngcontent-c5="" class="mat-card">
+  <md-card-title _ngcontent-c5="" class="mat-card-title ">Search Books</md-card-title>
+  <md-card-content _ngcontent-c5="" class="mat-card-content">
+    <md-input-container _ngcontent-c5="" class="mat-input-container ng-untouched ng-pristine ng-valid"><div class="mat-input-wrapper"><div class="mat-input-flex"><!----><div class="mat-input-infix">
+      <input _ngcontent-c5="" class="mat-input-element ng-untouched ng-pristine ng-valid" mdInput="" placeholder="Search books" value="science" id="md-input-1" aria-invalid="false">
+    <span class="mat-input-placeholder-wrapper"><!----><label class="mat-input-placeholder mat-float" for="md-input-1">Search books <!----></label></span></div><!----></div><div class="mat-input-underline"><span class="mat-input-ripple"></span></div><div class="mat-input-subscript-wrapper"><!----><!----><div class="mat-input-hint-wrapper"><!----><div class="mat-input-hint-spacer"></div></div></div></div></md-input-container>
+    <md-spinner _ngcontent-c5="" class="mat-spinner mat-primary" mode="indeterminate" role="progressbar" _nghost-c8="" aria-valuenow="0"><svg _ngcontent-c8="" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100"><path _ngcontent-c8="" style="strokeWidth:10;" d="M11.956013842547321,37.64463204709998A40,40 0 0,0 10.314738562692895,44.99200392845745"></path></svg></md-spinner>
+  </md-card-content>
+</md-card>
+
+<ngb-books-list _ngcontent-c5="" _nghost-c9=""><!----><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/PbWYBAAAQBAJ">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">The Science of Interstellar</md-card-title><!----></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=PbWYBAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">A journey through the otherworldly science behind Christopher Nolan’s highly anticipated film, Interstellar, from executive producer and theoretical physicist Kip Thorne. Interstellar, from acclaimed filmmaker Christopher Nolan, takes us on a fantast...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/U3ljjHts3b8C">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Making Truth</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">Metaphor in Science</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=U3ljjHts3b8C&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">InMaking Truth: Metaphor in ScienceTheodore L. Brown argues that most laypeople, and many scientists, do not have a clear understanding of how metaphor relates to scientific thinking. With stunning clarity, and bridging the worlds of scientists and n...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/Z4eKBgAAQBAJ">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">The Science Book</md-card-title><!----></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=Z4eKBgAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">The Science Book explores how scientists have sought to explain our world and the universe, and how scientific discoveries have been made. A new title in DK's successful "Big Ideas, Simply Explained" series, this book on science and the history of sc...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/KOxFejqJ97AC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">The Architecture of Science</md-card-title><!----></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=KOxFejqJ97AC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">How do the spaces in which science is done shape the identity of the scientist andthe self-conception of scientific fields? How do the sciences structure the identity of thearchitect and the practice of architecture in a specific period? And how does...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/YvSg8WBHIS4C">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Science on American Television</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">A History</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=YvSg8WBHIS4C&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">As television emerged as a major cultural and economic force, many imagined that the medium would enhance civic education for topics like science. And, indeed, television soon offered a breathtaking banquet of scientific images and ideas—both factual...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/_9k-4DJhK-wC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">The Science of Conjecture</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">Evidence and Probability Before Pascal</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=_9k-4DJhK-wC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">"A magisterial acount of matters as diverse as the Talmud, Justinian's Digest, torture, witch hunts, Tudor treason trials, ancient and medieval astronomy and physics, humanist historiography, scholastic philosophy, speculations in public debt, and 17...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/S8fIbD19BisC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Science as Social Knowledge</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">Values and Objectivity in Scientific Inq...</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=S8fIbD19BisC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">"Helen Longino has written a timely book that fills a critical gap in the existing literature between philosophy of science and the social studies of science. Her exposition of scientific inquiry as a context-laden process provides the conceptual too...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/vU8LauawsfkC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Science on Stage</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">Expert Advice as Public Drama</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=vU8LauawsfkC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">Behind today's headlines stands an unobtrusive army of science advisors—panels of scientific, medical, and engineering experts evaluate the safety of the food we eat, the drugs we take, and the cars we drive. This book studies, theoretically and empi...</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/TzrykdCRb1EC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Science as Public Culture</md-card-title><!----><md-card-subtitle _ngcontent-c10="" class="mat-card-subtitle ">Chemistry and Enlightenment in Britain, ...</md-card-subtitle></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=TzrykdCRb1EC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">Examines the development of chemistry in Britain 1760-1820 and relates it to civic life.</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview><ngb-book-preview _ngcontent-c9="" _nghost-c10=""><a _ngcontent-c10="" href="#/book/4zcntt5FKacC">
+  <md-card _ngcontent-c10="" class="mat-card">
+    <md-card-title-group _ngcontent-c10="" class="mat-card-title-group"><div><md-card-title _ngcontent-c10="" class="mat-card-title ">Science of Hitting</md-card-title><!----></div><!----><img _ngcontent-c10="" class="mat-card-sm-image" md-card-sm-image="" src="https://books.google.com/books/content?id=4zcntt5FKacC&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api">
+      
+      
+      
+    </md-card-title-group>
+    <md-card-content _ngcontent-c10="" class="mat-card-content">
+      <!----><p _ngcontent-c10="">Features the legendary hitter's guidance in all the basics and finer points of hitting and includes his analysis of the great hitters of the seventies and the eighties, including Rose, Brett, Carew, and Murray</p>
+    </md-card-content>
+    <md-card-footer _ngcontent-c10="" class="mat-card-footer">
+      
+    </md-card-footer>
+  </md-card>
+</a></ngb-book-preview></ngb-books-list></ngb-search-books>
+  </div>
+</div></md-sidenav-container>
+</ngb-root><script type="text/javascript" src="inline.47d7be8b07249ee300fd.bundle.js"></script><script type="text/javascript" src="polyfills.574056ad92b56d22f7bb.bundle.js"></script><script type="text/javascript" src="sw-register.c3a9f56ebf829a0880d3.bundle.js"></script><script type="text/javascript" src="vendor.44a6f84e9450091d2808.bundle.js"></script><script type="text/javascript" src="main.e3da48a7e163ed13cffe.bundle.js"></script></body></html>
